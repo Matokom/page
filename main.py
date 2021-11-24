@@ -46,7 +46,7 @@ if language == "Matlab":
     st.subheader("Kuka riadená neurónovou sieťou")
     st.markdown("""Na videu môžete vidieť 7 kĺbový priemyselný robot Kuka, ktorý je do 4 zvolených targetov
 riadený pomocou natrénovanej neurónovej siete. Sieť bola trénovaná evolučnými algoritmami. Video:""")
-    vid_file = open("Kukalow.wmv", 'rb').read()
+    vid_file = open("KukaMp4.mp4", 'rb').read()
     st.video(vid_file)
 
 if language == "Matlab":
