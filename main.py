@@ -4,7 +4,7 @@ from PIL import Image
 
 languages = ['Python', 'Matlab']
 st.title("Portfolio Martin Komák")
-st.text("""Na tomto webe nájdete moju poslednú tvorbu v programovacích jazykoch
+st.markdown("""Na tomto webe nájdete moju poslednú tvorbu v programovacích jazykoch
 Python a Matlab. Prosím, vľavo si zvolte programovací jazyk, ktorý Vás zaujíma.""")
 
 #vyber programovacieho jazyka
@@ -38,7 +38,7 @@ if language == "Python":
 if language == "Python":
     st.subheader("")
     st.subheader("Sieťový model PR")
-    st.markdown("Na obrázku nižšie je znázornený trojuholníková sieť reprezentujúca 3D model PR.")
+    st.markdown("Na obrázku nižšie je znázornená trojuholníková sieť reprezentujúca 3D model PR.")
     img = Image.open("pr1.jpg")
     st.image(img, caption="Sieť PR")
 
@@ -52,14 +52,14 @@ riadený pomocou natrénovanej neurónovej siete. Sieť bola trénovaná evoluč
 if language == "Matlab":
     st.subheader("")
     st.subheader('Mobilný robot v bludisku.')
-    st.markdown("""Malý mobilný robot, ktorý chodí po bludisku a ktorého vizualizácia je upravená z dôvodu vyššieho 
-výpočtového výkonu. Pri kolízii sa robot sfarbí na červeno. Video:""")
+    st.markdown("""Na videu môžete vidieť malý mobilný robot chodiaci po bludisku, ktorého vizualizácia je zjednodušená 
+z dôvodu vyššieho výpočtového výkonu. Pri kolízii sa robot sfarbí na červeno. Video:""")
     vid_file4 = open("mybludiskolow.mp4", 'rb').read()
     st.video(vid_file4)
 
 if language == "Matlab":
     st.subheader("")
-    st.subheader('Konfigurácia robota vyžitím GA')
+    st.subheader('Konfigurácia robota využitím GA')
     st.markdown("""Na videu nižšie môžete vidieť obálku priemyselného robota s prekážkou a požadovaným targetom. Cieľom
 bolo vytvoriť kinematiku priemyselného robota a pomocou genetických algoritmov nájsť vhodnú konfiguráciu. Video:""")
     vid_file1 = open("obalkalow.mp4", 'rb').read()
@@ -69,7 +69,7 @@ if language == "Matlab":
     st.subheader("")
     st.subheader('Hľadanie najkratšej dráhy v 2D priestore s prekážkou')
     st.markdown("""Program na hľadanie najkratšej dráhy v 2D priestore s prekážkou. Znázornené písmenka nám reprezentujú
-obchádzanú prekážku. Dráha je vytvorená z desiatich bodov a ich sponicami. Video:""")
+obchádzanú prekážku. Dráha je vytvorená z desiatich bodov a ich spojnicami. Video:""")
     vid_file = open("lowobchadzanie.mp4", 'rb').read()
     st.video(vid_file)
 
